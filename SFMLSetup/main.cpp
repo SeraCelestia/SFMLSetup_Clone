@@ -7,7 +7,7 @@
 
 int main()
 {
-    // Window init1
+    // Window init
 	sf::RenderWindow window(sf::VideoMode(1280, 720), "Default Name");  // Set window size
     window.setPosition(sf::Vector2i(600, 40));                          // Set window position
     window.requestFocus();                                              // Focus on window
