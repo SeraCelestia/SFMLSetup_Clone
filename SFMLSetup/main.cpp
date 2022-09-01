@@ -33,6 +33,9 @@ int main()
     
 
 	window.clear();
+    // Render loops
+
 	window.display();
+
 	return 0;
 }
