@@ -15,21 +15,22 @@ int main()
     // Main window loop
     while (window.isOpen())
     {
+        
 
+        // Main even poll loop
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+
+            if (event.type == sf::Event::Closed)
+            {
+                window.close();
+                // Delete stuff
+            }
+
+        }
     }
     
-    // Main even poll loop
-    sf::Event event;
-    while (window.pollEvent(event))
-    {
-
-        if (event.type == sf::Event::Closed)
-        {
-            window.close();
-            // delete stuff
-        }
-
-    }
 
 	window.clear();
 	window.display();
